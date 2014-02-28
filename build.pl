@@ -8,17 +8,17 @@ use strict;
 
 ### Config
 
-my $module = 'Text::Morse';
+my ($module, $author,  $license, $abstract, $description, $perl_ver, %requires);
 
-my $author  = 'Phil Pollard <bennie@cpan.org>';
-my $license = 'artistic_2';
+open INFILE, '<', 'config.txt' or die "Can't open 'config.txt'";
+my $text = join('',<INFILE>);
+close INFILE;
 
-my $abstract    = 'Encode and decode Morse code';
-my $description = $abstract;
+eval $text;
+die $@ if $@;
 
-my $perl_ver = '5.006';
-
-my %requires = ( 'Test::Simple' => '0' );
+die "Bad config." unless $module && $author && $license && 
+  $abstract && $description && $perl_ver && %requires;
 
 ### Post config
 

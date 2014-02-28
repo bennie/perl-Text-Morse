@@ -1,0 +1,14 @@
+### Config
+
+$module = 'Text::Morse';
+
+$author  = 'Phil Pollard <bennie@cpan.org>';
+$license = 'artistic_2';
+
+$abstract    = 'Encode and decode Morse code';
+$description = $abstract;
+
+$perl_ver = '5.006';
+
+%requires = ( 'Test::Simple' => '0' );
+
