@@ -1,5 +1,7 @@
 Changes
+LICENSE
 MANIFEST
 Makefile.PL
-Morse.pm
-test.pl
+lib/Text/Morse.pm
+t/01-load.t
+t/02-message.t
