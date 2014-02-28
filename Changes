@@ -6,6 +6,8 @@ VERSIONTAG  DATETAG
 	Added updated tests based on Test::Simple
 	Added a LICENSE file
 	Updated meta information for indexing
+	Suppressed qw// warnings due to commas
+	Explicitly declared version within the module	
 
 0.01  2001/07/20
 
