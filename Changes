@@ -1,5 +1,13 @@
 Revision history for Perl extension Text::Morse.
 
-0.01  Fri Jul 20 06:35:34 2001
-	- original version; created by h2xs 1.19
+VERSIONTAG  DATETAG
 
+	Applied patch from RT #20580 by Kevin J Walters <kevin.walters@morganstanley.com>
+	Added updated tests based on Test::Simple
+	Added a LICENSE file
+	Updated meta information for indexing
+
+0.01  2001/07/20
+
+	Original version
+	Authored by Ariel Brosh <schop@cpan.org>, now deceased
