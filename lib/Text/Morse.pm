@@ -1,8 +1,11 @@
 package Text::Morse;
+
 use strict qw(vars subs);
 use vars qw($VERSION %ENGLISH %SWEDISH %SVENSKA %LATIN);
 
-$VERSION = 0.01;
+$Text::Morse::VERSION = 'VERSIONTAG';
+
+no warnings 'qw';
 
 %ENGLISH = qw(
 A .-
