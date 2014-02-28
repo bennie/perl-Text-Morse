@@ -4,4 +4,4 @@ MANIFEST
 Makefile.PL
 lib/Text/Morse.pm
 t/01-load.t
-t/02-message.t
+t/02-decode.t
