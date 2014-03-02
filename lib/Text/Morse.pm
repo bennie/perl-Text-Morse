@@ -2,13 +2,12 @@ package Text::Morse;
 
 use warnings;
 use strict;
-use vars qw($VERSION %ENGLISH %SWEDISH %SVENSKA %LATIN);
 
 $Text::Morse::VERSION = 'VERSIONTAG';
 
 no warnings 'qw';
 
-%ENGLISH = qw(
+our %ENGLISH = qw(
 A .-
 B -...
 C -.-.
@@ -57,7 +56,7 @@ Z --..
 9 ----.
 );
 
-%SWEDISH = (%ENGLISH, qw(
+our %SWEDISH = (%ENGLISH, qw(
 Å  .--.-
 Ä .-.-
 Ö ---.
@@ -66,9 +65,7 @@ Z --..
 ö ---.
 ));
 
-*SVENSKA = \%SWEDISH;
-
-%LATIN = (%ENGLISH, qw(
+our %LATIN = (%ENGLISH, qw(
 Á .--.-
 Ä .-.-
 Ö ---.
@@ -84,9 +81,13 @@ Z --..
 ));
 
 sub new {
-        my ($class, $lang) = @_;
-        $lang ||= 'English';
-        my $hash = \%{uc($lang)};
+        my $class = shift @_;
+        my $lang  = shift @_;
+
+        my $hash = \%ENGLISH;
+        $hash = \%SWEDISH if defined $lang and $lang =~ /^(SWEDISH|SVENSKA)$/i;
+        $hash = \%LATIN if defined $lang and $lang =~ /^LATIN$/i;
+        
         my $rev = {reverse %$hash};
         my $self = {'enc' => $hash, 'dec' => $rev, 'lang' => $lang};
         bless $self, $class;
