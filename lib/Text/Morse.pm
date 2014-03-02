@@ -1,6 +1,7 @@
 package Text::Morse;
 
-use strict qw(vars subs);
+use warnings;
+use strict;
 use vars qw($VERSION %ENGLISH %SWEDISH %SVENSKA %LATIN);
 
 $Text::Morse::VERSION = 'VERSIONTAG';
@@ -115,11 +116,9 @@ sub Decode {
 
 1;
 __END__
-# Below is the stub of documentation for your module. You better edit it!
-
 =head1 NAME
 
-Text::Morse - Perl totally useless extension for Morse code
+Text::Morse - Encoding and decoding Morse code
 
 =head1 SYNOPSIS
 
@@ -133,17 +132,39 @@ Text::Morse - Perl totally useless extension for Morse code
 
 Useless but fun.
 
+=head1 SEE ALSO
+
+ /usr/games/morse.
+
 =head1 REQUESTS
 
 I need the morse codes for Hebrew, Arabic, Greek and Russian. Please send in 
 universal high ASCII (UNIX or Windows, not DOS) :-)
 
-=head1 AUTHOR
+=head1 BUGS AND SOURCE
 
-Ariel Brosh, schop@cpan.org
+	Bug tracking for this module: https://rt.cpan.org/Dist/Display.html?Name=Text-Morse
 
-=head1 SEE ALSO
+	Source hosting: http://www.github.com/bennie/perl-VMware-vCloud
 
-perl(1), /usr/games/morse.
+=head1 VERSION
+
+	Text::Morse vVERSIONTAG (DATETAG)
+
+=head1 COPYRIGHT
+
+	(c) 2014-YEARTAG, Phillip Pollard <bennie@cpan.org>
+	(c) 2001, Ariel Brosh
+
+=head1 LICENSE
+
+This source code is released under the "Perl Artistic License 2.0," the text of
+which is included in the LICENSE file of this distribution. It may also be
+reviewed here: http://opensource.org/licenses/artistic-license-2.0
+
+=head1 AUTHORSHIP
+
+This module was originally authored in 2001 by Ariel Brosh. (schop@cpan.org) 
+It was adopted (via the CPAN "adoptme" account) by Phillip Pollard in 2014.
 
 =cut
