@@ -5,6 +5,7 @@ VERSIONTAG  DATETAG
 	Adding license and copyright info into main POD
 	Added POD testing
 	Now using warnings
+	Adding a README file
 
 0.02	2014/02/27
 

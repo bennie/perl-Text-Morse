@@ -134,7 +134,7 @@ Useless but fun.
 
 =head1 SEE ALSO
 
- /usr/games/morse.
+	/usr/games/morse
 
 =head1 REQUESTS
 
