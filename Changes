@@ -2,6 +2,10 @@ Revision history for Perl extension Text::Morse.
 
 VERSIONTAG  DATETAG
 
+	Automatically generated meta data
+
+0.03  2014/03/01
+
 	No longer selecting a has variable based on unchecked user input
 	Now using warnings
 	Adding a README file
