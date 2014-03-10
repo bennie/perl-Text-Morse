@@ -2,6 +2,8 @@ Changes
 LICENSE
 Makefile.PL
 MANIFEST
+META.json
+META.yml
 lib/Text/Morse.pm
 README
 t/00-pod.t
