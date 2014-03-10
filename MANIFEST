@@ -1,11 +1,11 @@
 Changes
 LICENSE
-Makefile.PL
 MANIFEST
 META.json
 META.yml
-lib/Text/Morse.pm
+Makefile.PL
 README
+lib/Text/Morse.pm
 t/00-pod.t
 t/01-load.t
 t/02-decode.t
