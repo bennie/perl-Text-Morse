@@ -57,27 +57,89 @@ Z --..
 );
 
 our %SWEDISH = (%ENGLISH, qw(
-�  .--.-
-� .-.-
-� ---.
-�  .--.-
-� .-.-
-� ---.
+Å  .--.-
+Ä .-.-
+Ö ---.
+å  .--.-
+ä .-.-
+ö ---.
 ));
 
 our %LATIN = (%ENGLISH, qw(
-� .--.-
-� .-.-
-� ---.
-� .--.-
-� .-.-
-� ---.
-� ..-..
-� ..-..
-� --.--
-� --.--
-� ..--
-� ..--
+Á .--.-
+Ä .-.-
+Ö ---.
+á .--.-
+ä .-.-
+ö ---.
+É ..-..
+é ..-..
+Ñ --.--
+ñ --.--
+Ü ..--
+ü ..--
+));
+
+our %COMMON_CYR = qw(
+А .-
+Б -...
+В .--
+Г --.
+Д -..
+Е .
+Ж ...-
+З --..
+И ..
+Й .---
+К -.-
+Л .-..
+М --
+Н -.
+О ---
+П .--.
+Р .-.
+С ...
+Т -
+У ..-
+Ф ..-.
+Х ....
+Ц -.-.
+Ч ---.
+Ш ----
+Щ --.-
+Ю ..--
+Я .-.-
+. .-.-.-
+, --..--
+/ -...-
+: ---...
+' .----.
+- -....-
+? ..--..
+! ..--.
+@ ...-.-
++ .-.-.
+0 -----
+1 .----
+2 ..---
+3 ...--
+4 ....-
+5 .....
+6 -....
+7 --...
+8 ---..
+9 ----.
+);
+
+our %BULGARIAN = (%COMMON_CYR, qw(
+Ъ -..-
+Ь -.--
+));
+
+our %RUSSIAN = (%COMMON_CYR, qw(
+Ь -..-
+Ы -.--
+Э ..-..
 ));
 
 sub new {
@@ -87,6 +149,8 @@ sub new {
         my $hash = \%ENGLISH;
         $hash = \%SWEDISH if defined $lang and $lang =~ /^(SWEDISH|SVENSKA)$/i;
         $hash = \%LATIN if defined $lang and $lang =~ /^LATIN$/i;
+	$hash = \%BULGARIAN if defined $lang and $lang =~ /^(BULGARIAN|БЪЛГАРСКИ)$/i;
+	$hash = \%RUSSIAN if defined $lang and $lang =~ /^(RUSSIAN|РУССКИЙ)$/i;
         
         my $rev = {reverse %$hash};
         my $self = {'enc' => $hash, 'dec' => $rev, 'lang' => $lang};
@@ -166,6 +230,10 @@ reviewed here: http://opensource.org/licenses/artistic-license-2.0
 =head1 AUTHORSHIP
 
 This module was originally authored in 2001 by Ariel Brosh. (schop@cpan.org) 
+
 It was adopted (via the CPAN "adoptme" account) by Phillip Pollard in 2014.
+
+Additional Contributions:
+- Bulgarian and Russian language support by svetoslav.chingov@gmail.com 
 
 =cut

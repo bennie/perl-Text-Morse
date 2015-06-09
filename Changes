@@ -2,6 +2,10 @@ Revision history for Perl extension Text::Morse.
 
 VERSIONTAG  DATETAG
 
+	Bulgarian and Russian language support by svetoslav.chingov@gmail.com 
+
+0.04 2014/03/09
+
 	Automatically generated meta data
 
 0.03  2014/03/01

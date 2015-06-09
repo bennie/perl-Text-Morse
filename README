@@ -68,4 +68,8 @@ AUTHORSHIP:
 ================================================================================
 
 This module was originally authored in 2001 by Ariel Brosh. (schop@cpan.org) 
+
 It was adopted (via the CPAN "adoptme" account) by Phillip Pollard in 2014.
+
+Additional Contributions:
+- Bulgarian and Russian language support by svetoslav.chingov@gmail.com
