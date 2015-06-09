@@ -210,7 +210,7 @@ universal high ASCII (UNIX or Windows, not DOS) :-)
 
 	Bug tracking for this module: https://rt.cpan.org/Dist/Display.html?Name=Text-Morse
 
-	Source hosting: http://www.github.com/bennie/perl-VMware-vCloud
+	Source hosting: http://www.github.com/bennie/perl-Text-Morse
 
 =head1 VERSION
 
