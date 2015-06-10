@@ -1,5 +1,6 @@
 package Text::Morse;
 
+use utf8;
 use warnings;
 use strict;
 
