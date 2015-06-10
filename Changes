@@ -2,6 +2,11 @@ Revision history for Perl extension Text::Morse.
 
 VERSIONTAG  DATETAG
 
+	Correcting the source URL in the README file.
+		(from Syohei Yoshida - https://github.com/syohex)
+
+0.06
+
 	Bulgarian and Russian language support by svetoslav.chingov@gmail.com 
 
 0.04 2014/03/09
